@@ -131,18 +131,18 @@ export default {
 	 if (!helper.widget.site.mobileView) {
           const origin_code = helper.attach('header-search', { contextEnabled: header.state.contextEnabled });
           const nav_contents = h('div.topic-extra-info.header-links-wrapper.clearfix', [
-            h('a.header-link', { attributes: { href: Discourse.getURL(`/categories`), title: 'ÂÛÌ³×îĞÂ' } }, 'Ê×Ò³'),
-            h('a.header-link', { attributes: { href: Discourse.getURL(`/c/vrdiscuss`), title: 'VRĞéÄâÏÖÊµ»°ÌâÌÖÂÛ' } }, 'ÌÖÂÛÇø'),
-            h('a.header-link', { attributes: { href: Discourse.getURL(`/c/vrdevices`), title: '¸÷ÖÖVRÉè±¸ĞÅÏ¢¼°ÆÀ²â' } }, 'Éè±¸Çø'),
-            h('a.header-link', { attributes: { href: Discourse.getURL(`/c/resource`), title: 'ÊÓÆµ×ÊÔ´¼°ÓÎÏ·¹¤¾ßÏÂÔØ' } }, '×ÊÔ´Çø'),
-            h('a.header-link.u-button', { attributes: { href: 'http://dmgeek.com/', title: '·µ»Øµ½µÁÃÎ¼«¿ÍÖ÷Ò³', target: '_blank', onClick: 'window.open().location.href="http://dmgeek.com/"' } }, 'µÁÃÎÖ÷Ò³')
+            h('a.header-link', { attributes: { href: Discourse.getURL(`/categories`), title: 'è®ºå›æœ€æ–°' } }, 'é¦–é¡µ'),
+            h('a.header-link', { attributes: { href: Discourse.getURL(`/c/vrdiscuss`), title: 'VRè™šæ‹Ÿç°å®è¯é¢˜è®¨è®º' } }, 'è®¨è®ºåŒº'),
+            h('a.header-link', { attributes: { href: Discourse.getURL(`/c/vrdevices`), title: 'å„ç§VRè®¾å¤‡ä¿¡æ¯åŠè¯„æµ‹' } }, 'è®¾å¤‡åŒº'),
+            h('a.header-link', { attributes: { href: Discourse.getURL(`/c/resource`), title: 'è§†é¢‘èµ„æºåŠæ¸¸æˆå·¥å…·ä¸‹è½½' } }, 'èµ„æºåŒº'),
+            h('a.header-link.u-button', { attributes: { href: 'http://dmgeek.com/', title: 'è¿”å›åˆ°ç›—æ¢¦æå®¢ä¸»é¡µ', target: '_blank', onClick: 'window.open().location.href="http://dmgeek.com/"' } }, 'ç›—æ¢¦ä¸»é¡µ')
           ]);
           // return helper.attach('header-search', { contextEnabled: header.state.contextEnabled })
           return [origin_code, nav_contents];
         } else {
           $('.d-header').removeClass('header-search-enabled')
         }
-      })
+      }) 
 
       api.attachWidgetAction('home-logo', 'click', function(e) {
         if (wantsNewWindow(e)) { return false; }
