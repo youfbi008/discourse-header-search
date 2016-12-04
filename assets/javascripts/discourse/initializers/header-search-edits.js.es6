@@ -129,7 +129,7 @@ export default {
           $('.d-header').addClass('header-search-enabled')
         //  return helper.attach('search-menu', { contextEnabled: header.state.contextEnabled, formFactor: 'header' })
   	       if (!helper.widget.site.mobileView) {
-            const origin_code = helper.attach('header-search', { contextEnabled: header.state.contextEnabled, formFactor: 'header' });
+            const origin_code = helper.attach('search-menu', { contextEnabled: header.state.contextEnabled, formFactor: 'header' });
             const nav_contents = h('div.topic-extra-info.header-links-wrapper.clearfix', [
               h('a.header-link', { attributes: { href: Discourse.getURL(`/categories`), title: '论坛最新' } }, '首页'),
               h('a.header-link', { attributes: { href: Discourse.getURL(`/c/vrdiscuss`), title: 'VR虚拟现实话题讨论' } }, '讨论区'),
