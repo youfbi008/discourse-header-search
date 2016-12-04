@@ -4,7 +4,11 @@
   vertical-align: middle;
 }
 
-.header-search {
+.header-search-enabled #search-button {
+  display: none;
+}
+
+.search-header {
   display: inline-block;
   vertical-align: middle;
   max-width: 550px;
@@ -14,7 +18,7 @@
   position: relative;
   white-space: nowrap;
 
-  #header-search-term {
+  #search-term {
     background-color: #f1f1f1;
     height: 20px;
     width: 73%;
@@ -30,13 +34,10 @@
     display: none;
   }
 
-  .header-search-context {
+  .search-context {
     display: inline-block;
     vertical-align: middle;
     padding: 0 10px;
-    button {
-      padding: 5px 10px;
-    }
   }
 
   a.show-help {
